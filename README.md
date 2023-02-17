@@ -9,7 +9,8 @@
 - Knowledge of Swift programming language and iOS development
 
 # Preview
-![](https://drive.google.com/uc?id=1HBnoz86WFfjP0OYNURsjZLRXtgS_4Y0g)
+
+<img src="https://drive.google.com/uc?id=1HBnoz86WFfjP0OYNURsjZLRXtgS_4Y0g" width="370" height="400">
 
 ## Features
 
