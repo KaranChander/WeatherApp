@@ -6,8 +6,20 @@
 //
 
 import Foundation
+import SwiftUI
+import CoreLocation
 
 class WelcomeScreenViewModel: ObservableObject {
+    
+//    var locationManager: LocationManager = LocationManager()
+//    
+//    init(){
+//        coordinates = locationManager.location
+//    }
+//    
+//    func requestLocation() {
+//        locationManager.requestLocation()
+//    }
     
     
 }
