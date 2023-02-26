@@ -16,6 +16,7 @@
 		A0C25CC5299FF0DB00E78A7D /* WeatherHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C25CC4299FF0DB00E78A7D /* WeatherHomeView.swift */; };
 		A0C25CC8299FF16D00E78A7D /* WeatherHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C25CC7299FF16C00E78A7D /* WeatherHomeViewModel.swift */; };
 		A0C25CCA299FF17700E78A7D /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C25CC9299FF17700E78A7D /* WeatherModel.swift */; };
+		A0C25CCC29A00E3100E78A7D /* city.list.json in Resources */ = {isa = PBXBuildFile; fileRef = A0C25CCB29A00E3100E78A7D /* city.list.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A0C25CC4299FF0DB00E78A7D /* WeatherHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHomeView.swift; sourceTree = "<group>"; };
 		A0C25CC7299FF16C00E78A7D /* WeatherHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHomeViewModel.swift; sourceTree = "<group>"; };
 		A0C25CC9299FF17700E78A7D /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		A0C25CCB29A00E3100E78A7D /* city.list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.list.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				A0C25CBD299F2B6400E78A7D /* Welcome Screen */,
 				A0C25CC2299F2B8800E78A7D /* Managers */,
 				A0C25CB3299F2B2900E78A7D /* Assets.xcassets */,
+				A0C25CCB29A00E3100E78A7D /* city.list.json */,
 				A0C25CB5299F2B2900E78A7D /* Preview Content */,
 				A0C25CC6299FF0E000E78A7D /* Weather Home */,
 			);
@@ -168,6 +171,7 @@
 			files = (
 				A0C25CB7299F2B2900E78A7D /* Preview Assets.xcassets in Resources */,
 				A0C25CB4299F2B2900E78A7D /* Assets.xcassets in Resources */,
+				A0C25CCC29A00E3100E78A7D /* city.list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
