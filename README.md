@@ -22,7 +22,7 @@
 - Made using SwiftUI
 - Integrated OpenWeatherMap API
 
-##TO DO:
+# TO DO:
 - UI theme update based on weather type
 - Add weather forecast details for the whole week
 
