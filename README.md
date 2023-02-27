@@ -6,11 +6,15 @@
 - Xcode 11.0 or later
 - iOS 13.0 or later
 - Swift 5.0 or later
+- SwiftUI
 - Knowledge of Swift programming language and iOS development
 
 # Preview
 
-<img src="https://drive.google.com/uc?id=1HBnoz86WFfjP0OYNURsjZLRXtgS_4Y0g" width="370" height="400">
+<img src="https://drive.google.com/uc?id=1w2lfnfb-aLpliS51eR2ke9xJv-UzZZCR" width="370" height="400">
+
+<img src="https://drive.google.com/uc?id=1Wkm_tlxJivO9Aosh5P1bTGlBhEn7KLS7" width="370" height="600">
+
 
 ## Features
 
@@ -19,8 +23,8 @@
 - Integrated OpenWeatherMap API
 
 ##TO DO:
-- Searching functionality
 - UI theme update based on weather type
+- Add weather forecast details for the whole week
 
 
 
