@@ -23,3 +23,13 @@ struct WeatherInfo: Codable {
     let main: String
     let description: String 
 }
+
+struct City: Decodable, Identifiable {
+    let id = UUID()
+    let city: String
+    let latitude: Double
+    let longitude: Double
+    // Add other properties as needed
+}
+
+

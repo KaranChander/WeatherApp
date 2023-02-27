@@ -26,7 +26,7 @@ struct WelcomeScreen: View {
             }
             
         }
-        }
+        }.preferredColorScheme(.light)
     }
 }
 
@@ -36,27 +36,27 @@ struct locationButtonView: View {
     @State var selection: Int? = nil
 
     var body: some View {
-        NavigationLink(destination: WeatherHomeView(viewModel: WeatherViewModel(coordinates: locationManager.location!)), tag: 1, selection: $selection) {
-                ZStack {
-                    Color(.gray)
-                        .frame(width: 250, height: 40, alignment: .center)
-                        .cornerRadius(20)
-                        .opacity(0.3)
-                    Button {
-                        //prompt for location
-                        locationManager.requestLocation()
-                        print(locationManager.location)
-                        self.selection = 1
-                    } label: {
-                        Image(systemName: "location.fill")
-                            .tint(.white)
-                        Text("Allow Location Permission")
-                            .foregroundColor(.white)
-                    }.padding(EdgeInsets.init(top: 5, leading: 20, bottom: 5, trailing: 20))
-                        
-                        
-                }
+        NavigationLink(destination: WeatherHomeView(searchText: "", viewModel: WeatherViewModel(coordinates: locationManager.location!)), tag: 1, selection: $selection) {
+            ZStack {
+                Color(.gray)
+                    .frame(width: 250, height: 40, alignment: .center)
+                    .cornerRadius(20)
+                    .opacity(0.3)
+                Button {
+                    //prompt for location
+                    locationManager.requestLocation()
+                    print(locationManager.location)
+                    self.selection = 1
+                } label: {
+                    Image(systemName: "location.fill")
+                        .tint(.white)
+                    Text("Allow Location Permission")
+                        .foregroundColor(.white)
+                }.padding(EdgeInsets.init(top: 5, leading: 20, bottom: 5, trailing: 20))
+                
+                
             }
+        }.navigationBarBackButtonHidden(true)
         
        
     }
