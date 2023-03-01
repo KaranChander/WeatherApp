@@ -16,7 +16,7 @@ struct WeatherHomeView: View {
         NavigationView {
             ZStack{
                 LinearGradient(
-                    colors: [.blue,Color("lightBlue")],
+                    colors: viewModel.getBackgroundGradientColors(icon: viewModel.model?.weather.first!.icon ?? .clearSkyDay),
                     startPoint: .top,
                     endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)

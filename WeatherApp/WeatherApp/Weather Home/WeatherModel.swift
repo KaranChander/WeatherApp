@@ -23,6 +23,10 @@ struct WeatherInfo: Codable {
     let main: String
     let description: String
     let icon: WeatherIcon
+    
+    func getDayStatus() -> Bool {
+        return icon.rawValue.contains("d")
+    }
 }
 
 enum WeatherIcon: String, Codable {

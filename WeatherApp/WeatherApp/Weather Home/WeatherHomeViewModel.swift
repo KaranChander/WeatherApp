@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreLocation
+import SwiftUI
 
 class WeatherViewModel: ObservableObject {
     //    var coordinates: CLLocationCoordinate2D?
@@ -43,7 +44,6 @@ class WeatherViewModel: ObservableObject {
     
     func getWeatherIcon(icon: WeatherIcon) -> String {
         switch icon {
-            
         case .clearSkyDay:
             return "sun.max.fill"
         case .clearSkyNight:
@@ -58,37 +58,86 @@ class WeatherViewModel: ObservableObject {
             return "cloud.fill"
         case .brokenCloudsDay:
             return "cloud.fill"
-            
         case .brokenCloudsNight:
             return "cloud.fill"
-            
         case .showerCloudsDay:
             return "cloud.sun.rain.fill"
         case .showerCloudsNight:
             return "cloud.moon.rain.fill"
-            
         case .rainDay:
             return "cloud.heavyrain.fill"
-            
         case .rainNight:
             return "cloud.heavyrain.fill"
-            
         case .thunderStormDay:
             return "cloud.bolt.fill"
         case .thunderStormNight:
             return "cloud.bolt.fill"
-            
         case .snowDay:
-            
             return "snowflake"
         case .snowNight:
             return "snowflake"
-            
         case .mistDay:
             return "cloud.fog.fill"
         case .mistNight:
             return "cloud.fog.fill"
+        }
+    }
+    
+    func getBackgroundGradientColors(icon: WeatherIcon) -> [Color] {
+        switch icon {
             
+        case .clearSkyDay:
+            return [.blue,Color("lightBlue")]
+        case .clearSkyNight:
+            return [Color("night1"), Color("night2")]
+        case .fewCloudsDay:
+            return [Color("cloudDay1"), Color("cloudDay2")]
+
+        case .fewCloudsNight:
+            return [Color("cloudNight1"), Color("cloudNight2")]
+
+        case .scatteredCloudsDay:
+            return [Color("cloudDay1"), Color("cloudDay2")]
+
+        case .scatteredCloudsNight:
+            return [Color("cloudNight1"), Color("cloudNight2")]
+
+        case .brokenCloudsDay:
+            return [Color("cloudDay1"), Color("cloudDay2")]
+
+        case .brokenCloudsNight:
+            return [Color("cloudNight1"), Color("cloudNight2")]
+
+        case .showerCloudsDay:
+            return [Color("cloudDay1"), Color("cloudDay2")]
+
+        case .showerCloudsNight:
+            return [Color("cloudNight1"), Color("cloudNight2")]
+
+        case .rainDay:
+            return [Color("rainDay1"), Color("rainDay2")]
+
+        case .rainNight:
+            return [Color("rainNight1"), Color("rainNight2")]
+
+        case .thunderStormDay:
+            return [Color("thunderStormDay1"), Color("thunderStormDay2")]
+
+        case .thunderStormNight:
+            return [Color("thunderStormNight1"), Color("thunderStormNight2")]
+
+        case .snowDay:
+            return [Color("snowDay1"), Color("snowDay2")]
+
+        case .snowNight:
+            return [Color("snowNight1"), Color("snowNight2")]
+
+        case .mistDay:
+            return [Color("mistDay1"), Color("mistDay2")]
+
+        case .mistNight:
+            return [Color("mistNight1"), Color("mistNight2")]
+
         }
     }
     
