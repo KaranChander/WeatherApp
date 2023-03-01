@@ -21,7 +21,29 @@ struct CurrentWeather: Codable {
 
 struct WeatherInfo: Codable {
     let main: String
-    let description: String 
+    let description: String
+    let icon: WeatherIcon
+}
+
+enum WeatherIcon: String, Codable {
+    case clearSkyDay = "01d"
+    case clearSkyNight = "01n"
+    case fewCloudsDay = "02d"
+    case fewCloudsNight = "02n"
+    case scatteredCloudsDay = "03d"
+    case scatteredCloudsNight = "03n"
+    case brokenCloudsDay = "04d"
+    case brokenCloudsNight = "04n"
+    case showerCloudsDay = "09d"
+    case showerCloudsNight = "09n"
+    case rainDay = "10d"
+    case rainNight = "10n"
+    case thunderStormDay = "11d"
+    case thunderStormNight = "11n"
+    case snowDay = "13d"
+    case snowNight = "13n"
+    case mistDay = "50d"
+    case mistNight = "50n"
 }
 
 struct City: Decodable, Identifiable {

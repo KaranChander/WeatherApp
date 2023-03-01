@@ -131,7 +131,7 @@ struct WeatherImageAndTemp: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            Image(systemName: "cloud.sun.fill")
+            Image(systemName: viewModel.getWeatherIcon(icon: viewModel.model?.weather.first!.icon ?? .clearSkyDay ))
                 .renderingMode(.original)
                 .resizable()
                 .aspectRatio(contentMode: .fit)

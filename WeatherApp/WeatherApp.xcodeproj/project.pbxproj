@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A04FE52229AFBA5D00D1E948 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FE52129AFBA5D00D1E948 /* AppConstant.swift */; };
 		A0C25CB0299F2B2700E78A7D /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C25CAF299F2B2700E78A7D /* WeatherApp.swift */; };
 		A0C25CB2299F2B2700E78A7D /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C25CB1299F2B2700E78A7D /* WelcomeScreen.swift */; };
 		A0C25CB4299F2B2900E78A7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C25CB3299F2B2900E78A7D /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A04FE52129AFBA5D00D1E948 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		A0C25CAC299F2B2700E78A7D /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C25CAF299F2B2700E78A7D /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		A0C25CB1299F2B2700E78A7D /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A04FE52329AFBA6200D1E948 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A04FE52129AFBA5D00D1E948 /* AppConstant.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		A0C25CA3299F2B2700E78A7D = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 				A0C25CCB29A00E3100E78A7D /* city.list.json */,
 				A0C25CB5299F2B2900E78A7D /* Preview Content */,
 				A0C25CC6299FF0E000E78A7D /* Weather Home */,
+				A04FE52329AFBA6200D1E948 /* Resource */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 				A0C25CB0299F2B2700E78A7D /* WeatherApp.swift in Sources */,
 				A0C25CC5299FF0DB00E78A7D /* WeatherHomeView.swift in Sources */,
 				A0C25CBF299F2B7500E78A7D /* WelcomeScreenViewModel.swift in Sources */,
+				A04FE52229AFBA5D00D1E948 /* AppConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
