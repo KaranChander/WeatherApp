@@ -24,7 +24,6 @@ https://user-images.githubusercontent.com/36597393/222236666-1bb5b9d5-147a-4149-
 - Integrated OpenWeatherMap API
 
 # TO DO:
-- UI theme update based on weather type
 - Add weather forecast details for the whole week
 
 
