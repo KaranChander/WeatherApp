@@ -13,7 +13,8 @@
 
 <img src="https://drive.google.com/uc?id=1w2lfnfb-aLpliS51eR2ke9xJv-UzZZCR" width="370" height="400">
 
-<img src="https://drive.google.com/uc?id=1Wkm_tlxJivO9Aosh5P1bTGlBhEn7KLS7" width="300" height="600">
+
+https://user-images.githubusercontent.com/36597393/222236666-1bb5b9d5-147a-4149-a303-147bcb336c56.mp4
 
 
 ## Features
