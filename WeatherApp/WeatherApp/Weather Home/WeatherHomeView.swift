@@ -11,7 +11,7 @@ struct WeatherHomeView: View {
     @State var searchText: String
     @StateObject var viewModel: WeatherViewModel
     @State var isExpanded: Bool = false
-
+    
     var body: some View {
         NavigationView {
             ZStack{
@@ -19,7 +19,10 @@ struct WeatherHomeView: View {
                     colors: viewModel.getBackgroundGradientColors(icon: viewModel.model?.weather.first!.icon ?? .clearSkyDay),
                     startPoint: .top,
                     endPoint: .bottom)
+                .animation(.easeInOut(duration: 0.6), value: viewModel.getBackgroundGradientColors(icon: viewModel.model?.weather.first!.icon ?? .clearSkyDay))
                 .edgesIgnoringSafeArea(.all)
+                
+                
                 WeatherContentVStackView(viewModel: viewModel, searchText: $searchText, isExpanded: $isExpanded)
                 CityListView(searchText: $searchText, viewModel: viewModel, isExpanded: $isExpanded)
                     .edgesIgnoringSafeArea(.top)
@@ -29,7 +32,7 @@ struct WeatherHomeView: View {
             }
         }.navigationBarBackButtonHidden(true)
             .preferredColorScheme(.light)
-
+        
     }
     
 }
@@ -63,12 +66,12 @@ struct CityListView: View {
             .padding(.trailing, 20)
             .frame(height: searchText.isEmpty ? 0 : 300)
             .onAppear() {
-                             UITableView.appearance().backgroundColor = UIColor.clear
-                             UITableViewCell.appearance().backgroundColor = UIColor.clear
-                         }
-            
-//            .cornerRadius(20)
-            
+                UITableView.appearance().backgroundColor = UIColor.clear
+                UITableViewCell.appearance().backgroundColor = UIColor.clear
+            }
+        
+        //            .cornerRadius(20)
+        
     }
 }
 
@@ -254,7 +257,7 @@ struct SearchBarView: View {
     @Binding var searchText: String
     @Binding var isExpanded: Bool
     @ObservedObject var viewModel: WeatherViewModel
-
+    
     
     var body: some View {
         
